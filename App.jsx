@@ -15,6 +15,14 @@ const App = () => {
   const [open, setOpen] = useState(false);
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
+  const hello = async () => {
+    return (
+      <View>
+        <Text>hello</Text>
+      </View>
+    );
+  };
+
   const fadeIn = () => {
     // Will change fadeAnim value to 1 in 5 seconds
     Animated.timing(fadeAnim, {
